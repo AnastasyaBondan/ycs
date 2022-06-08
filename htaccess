@@ -1,0 +1,56 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page26545391.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^screth$ page27603139.html [NC]
+RewriteRule ^screth/$ page27603139.html [NC]
+
+RewriteRule ^python$ page27603200.html [NC]
+RewriteRule ^python/$ page27603200.html [NC]
+
+RewriteRule ^web$ page27603241.html [NC]
+RewriteRule ^web/$ page27603241.html [NC]
+
+RewriteRule ^java$ page27603278.html [NC]
+RewriteRule ^java/$ page27603278.html [NC]
+
+RewriteRule ^art$ page27603303.html [NC]
+RewriteRule ^art/$ page27603303.html [NC]
+
+RewriteRule ^ua$ page27652036.html [NC]
+RewriteRule ^ua/$ page27652036.html [NC]
+
+RewriteRule ^screthua$ page27652693.html [NC]
+RewriteRule ^screthua/$ page27652693.html [NC]
+
+RewriteRule ^pythonua$ page27652704.html [NC]
+RewriteRule ^pythonua/$ page27652704.html [NC]
+
+RewriteRule ^webua$ page27652715.html [NC]
+RewriteRule ^webua/$ page27652715.html [NC]
+
+RewriteRule ^javaua$ page27652855.html [NC]
+RewriteRule ^javaua/$ page27652855.html [NC]
+
+RewriteRule ^artua$ page27652870.html [NC]
+RewriteRule ^artua/$ page27652870.html [NC]
+
+RewriteRule ^thank-you-page$ page28095387.html [NC]
+RewriteRule ^thank-you-page/$ page28095387.html [NC]
+
+RewriteRule ^thank-you-pageua$ page28095412.html [NC]
+RewriteRule ^thank-you-pageua/$ page28095412.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6266-6636-4830-b739-383739346566/favicon.ico [R=302,L]
+
